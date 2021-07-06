@@ -1,0 +1,133 @@
+https://codepen.io/xa3n0n/pen/OJmMKrv?editors=1100
+
+1. What is Semantic HTML?
+"Semantic HTML is markup in HTML that clearly describes meaning; as opposed to elements that are far more vague, such as <div>s and <span>s."
+
+2. What is HTML used for?
+"HTML is used to structure, markup, and style a document for viewing by a browser (though, CSS is far better at the styling part.)"
+
+3. What is an attribute and where do we put it?
+"An attribute is a charachteristic or trait possessed by an element. It is placed in the opening tag of any declared elemment, separated from the element by a space, and given values by an '=' sign."
+
+4. What is the h1 tag used for? How many times should I use it on a page?
+"An <h1> tag is used for creating large strong text that usually indicates the visual title, identity, or purpose of a specific page and/or its topic. You should reasonably only use an <h1> once, for the sake of webcrawlers and SEO, not to mentio design conventions."
+
+5. Name two tags that have required attributes.
+"The <a> and <img> tags both require the attributes 'href' and 'src', respectively."
+
+6. What do we put in the head of our HTML document?
+"The contains things usually unseen by the viewer: Metadata like charset declarations, links to stylesheets and script files, tracking information, the title, etc."
+
+7. What is an id?
+"An 'id' is a special attribute that allows you to define a unique string to represent a specific iteration of an element within your document. This id can then be used for reference within the document or (more often) as a identifier for styling in CSS."
+
+8. What elements can I add an id to?
+"As of HTML5, an 'id' attribute can be used by any tag; however, in HTML 4.01, it was restricted from being used with <base>, <head>, <html>, <meta>, <param>, <script>, <style>, and <title>, nor could it start with a number."
+
+9. How many times can I use the same id on a page? 
+"Only once. No two elements can have the same 'id'."
+
+10. What is a class?
+"In essense a 'class' attribute is an 'id' attribute for a specific group of elements."
+
+11. What elements can I add a class to? 
+"The 'class' attribute can be used on any HTML element."
+
+12. How many times can I use the same class on a page?
+"As many times as you'd like."
+
+13. How do I get my link to open in a new tab?
+"Adding the attribute 'target' with the value '_blank', the hyperlink within the anchor tag will open in a new browser tab when clicked."
+
+14. What is the alt attribute in the image tag used for? 
+"The alt attribute specifies alternative information for an image if said image cannot be displayed for some reason or the other."
+
+15. How do I reference an id?
+"Using the hashtag (#), followed by the target 'id' value, is the way you call any unique 'id's in HTML."
+
+16. What is the difference between a section and a div?
+"<section> is a semantic tag, depicting that the content inside is grouped and should appear as an entry in an outline of a page. <div> is vague, conveying no meaning. For the purpose of markup, they otherwise form a container in a similar fashion."
+
+17. What is CSS used for?
+"CSS is used to efficiently and thoroughly style a linked HTML document for viewing in a browser."
+
+18. How to we select an element? Example - every h2 on the page.
+"In CSS, you can globally modify any html tag by simply writing that tag and defining styles for it in curly brackets immediately following."
+
+19. What is the difference between a class and an id? - Give me an example of when I might use each one.
+"If you wanted to, for example, create a class to style all items for purchase on an e-commerce store page with a specific border; You could add 'class = "product"' as an attribute to each container or <img> tag and then style the class in a linked CSS page. If you had a specific item that was out of stock, you could add an 'id = "out_of_stock"' attribute to that specific item's <img> tag and style that unique id in CSS to have a red border or maybe a background color that shows from behind a semi-transparent image."
+
+20. How do we select classes in CSS?
+"In CSS, you select a class by using a '.' before the class name."
+
+21. How do we select a p element with a single class of “human””?
+"In CSS, 'p.human {}' is the way to select a 'p' element with a single class of 'human'. "
+
+22. What is a parent child selector? When would this be useful?
+"The parent child selector clearly designates which HTML elements are the direct children of another, and thus inherit their attributes. This would be useful if you had to style a large amount of content, but not all of it, within a <div> or maybe change the background of text in the middle of a div that belonged to a class previously styled by CSS, especially in a very long or convoluted document that would be impractical to edit. It becomes easier to simply add the selector at the bottom of the stylesheet and edit the values of the target area."
+
+23. How do you select all links within a div with the class of sidebar?
+".sidebar div a {
+    etc: etc;
+}"
+
+24. What is a pseudo selector?
+"It allows you to base a selection not just on a class or relationship, but on an external event or status of content as well. For example, "button:hover" would select all <button> tags when the user's cursor has hovered over the button that the tag creates."
+
+25. What do we use the change the spacing between lines?
+"In CSS, we use the 'line-height' property to change line-spacing on a page."
+
+26. What do we use to change the spacing between letters?
+"In CSS, we use the 'letter-spacing' property to change the spaces between letters on a page."
+
+27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+"In CSS, we use the 'text-transform' property and assign the value 'uppercase' for CAPITALS, 'lowercase' for lowercase, and 'capitalize' for Capitalize."
+
+28. How do I add a 1px border around my div that is dotted and black?
+"#my_div {
+    border-width: 1px;
+    border-style: dotted;
+    border-color: black;
+}"
+
+29. How do I select everything on the page? 
+"html {
+    etc:etc;
+}"
+
+30. How do I write a comment in CSS?
+"/* This is how you commment in CSS. */"
+
+31. How do I find out what file I am in, when I am using the command line?
+"Using the 'pwd' command will print the current working directory."
+
+32. Using the command line - how do I see a list of files/folders in my current folder?
+"Using the 'ls' command will print all cognizable files and folders in your current working directory."
+
+33. How do I remove a file via the command line? Why do I have to be careful with this?
+"Using the 'rm' command will remove a designated file. This is dangerous because the deletion is permanent and does not prompt for confirmation."
+
+34. Why should I use version control?
+"Especially when collaborating with several individuals, you have a historical record of code changes and restoration points that can be used to rollback code to before a certain error or fatal circumstance existed in the solution. Also, it permits an individual to easily distribute updates and changes, promulgating them across the entire repository's users."
+
+35. How often should I commit to github?
+"Every time a material change is made that you're assured is correct."
+
+36. What is the command we would use to push our repo up to github?
+"After committing, you would simply use the 'git push -u origin [branch_name]'."
+
+37. Walk me through Lambda's git flow.
+"   1. Fork project repo.
+    2. Go to clone section of page (copy HTTPS link).
+    3. cd into working directory on gitbash.
+    4. git clone [link from Step 2] (clone the repo to the working directory).
+    5. cd into cloned repo.
+    6. git checkout -b 'firstname-lastname' (creates your own branch)
+    7. WORK ON YOUR REPO.
+    8. git add . (add repo changes)
+    9. git commit -m "Helpful msg." (commit changes and package things up)
+    10. git push -u origin branch-name (push all commits to github)
+    11. Go to your forked version of the project on github.
+    12. Click Btanch:master and initiate 'New Pull Request'.
+    13. Change base repository on Pull-Request page to forked repo.
+    14. Click "Create Pull Request".
